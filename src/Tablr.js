@@ -29,6 +29,7 @@ export const Tablr = ({
     small: '3px',
     medium: '8px',
     large: '15px',
+    xl: '30px',
   };
   const borderWidthMap = {
     thin: '1px',
@@ -82,7 +83,7 @@ Tablr.propTypes = {
   headerBorderColor: PropTypes.string,
   headerBackgroundColor: PropTypes.string,
   borderWidth: PropTypes.oneOf(['thin', 'medium', 'thick']),
-  cellPadding: PropTypes.oneOf(['small', 'medium', 'large']),
+  cellPadding: PropTypes.oneOf(['small', 'medium', 'large', 'xl']),
   headers: PropTypes.arrayOf(PropTypes.string).isRequired,
   rows: PropTypes.arrayOf(PropTypes.arrayOf(PropTypes.string)).isRequired,
 };
